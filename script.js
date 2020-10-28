@@ -33,7 +33,7 @@ function prepareRead(){
 function speedRead(){
  let phraseIdentifier = setInterval(function(){
 
-    if (userphrase[i] === undefined){
+    if (userPhrase[i] === undefined){
         clearInterval(phraseIdentifier)
     } else mainEl.textContent = userPhrase[i]
     i++
