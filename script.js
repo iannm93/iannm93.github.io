@@ -11,7 +11,6 @@ let i = 0;
 let userPhrase = prompt("type a phrase that you would like to have printed to the screen")
 userPhrase = userPhrase.split(" ")
 let milliseconds = prompt("how many milliseconds long do you want the interval to be")
-console.log
 // the time for the first interval
 let timeLeft = 6
 
