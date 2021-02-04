@@ -41,3 +41,17 @@ function speedRead(){
 }
 
 prepareRead();
+
+function duplicateCount(str) {
+    
+    const usedLetters = [];
+    const duplicates = [];
+    str.split("").forEach(letter => {
+        console.log(usedLetters.indexOf(letter))
+      if(~usedLetters.indexOf(letter) && duplicates.indexOf(letter) < 0) duplicates.push(letter);
+      else usedLetters.push(letter);
+    });
+    console.log(duplicates.length)
+  }
+
+  duplicateCount("abbcde")
